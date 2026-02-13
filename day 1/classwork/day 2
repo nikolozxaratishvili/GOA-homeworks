@@ -1,0 +1,8 @@
+word1 = "nikolozma"
+word2 = "unda"
+word3 = "imecadinos"
+word4 = "rodesac"
+word5 = "saxlsi"
+word6 = "miva"
+
+print(word1 +" "+ word2 +" "+ word3 +" "+ word4 +" "+ word5 +" "+ word6)
