@@ -60,4 +60,11 @@ Name = "nika"
 # snake_case არის ცვლადებისა და სახელების დაწერის სტილი სადაც ყველა სიტყვა იწერება პატარა ასოებით და სიტყვები ერთმანეთისგან გამოყოფილია ქვედა ტირეთი (_) ეს სტილი ხშირად გამოიყენება Python-ში და კოდს უფრო წაკითხვადსა და გასაგებს ხდის.
 
 
+# 1) ძაღლის სახელი და ტიპი
+dog = input("Enter your dog's name: ")
+print("Dog's name is " + dog)
+print(type(dog))
 
+# 2) ასაკის გამოთვლა
+birth_year = int(input("Enter your birth year: "))
+print("You are", 2025 - birth_year, "years old")
