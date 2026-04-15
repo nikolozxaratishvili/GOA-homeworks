@@ -1,0 +1,144 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <h1>ფორმების მაგალითები</h1>
+
+    <!-- 1 და 2 დავალების მაგალითები ტექსტურად -->
+    <h2>სად ვიყენებთ radio input-ს?</h2>
+    <p>
+        1) სქესის არჩევა <br>
+        2) გადახდის მეთოდი <br>
+        3) კი / არა კითხვები
+    </p>
+
+    <h2>სად ვიყენებთ select-ს?</h2>
+    <p>
+        1) ქვეყნის არჩევა <br>
+        2) ქალაქის არჩევა <br>
+        3) ასაკის დიაპაზონი
+    </p>
+
+    <hr>
+
+    <!-- 3 დავალება -->
+    <h2>სქესის არჩევა</h2>
+    <form>
+        <label>
+            <input type="radio" name="gender"> Male
+        </label>
+
+        <label>
+            <input type="radio" name="gender"> Female
+        </label>
+
+        <br><br>
+        <input type="submit" value="გაგზავნა">
+    </form>
+
+    <hr>
+
+    <!-- 4 დავალება -->
+    <h2>ქვეყნის არჩევა</h2>
+    <form>
+        <label for="country">აირჩიე ქვეყანა:</label>
+
+        <select id="country">
+            <option selected>საქართველო</option>
+            <option>აშშ</option>
+            <option>გერმანია</option>
+            <option>საფრანგეთი</option>
+            <option>იტალია</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="გაგზავნა">
+    </form>
+
+    <p>
+        selected ატრიბუტი ნიშნავს რომ ეს ვარიანტი თავიდანვე არჩეულია.
+    </p>
+
+    <hr>
+
+    <!-- 5 დავალება -->
+    <h2>სრული ფორმა</h2>
+    <form>
+
+        <label>სახელი:</label>
+        <input type="text"><br><br>
+
+        <p>საყვარელი ფერი:</p>
+        <label><input type="radio" name="color"> წითელი</label>
+        <label><input type="radio" name="color"> ლურჯი</label>
+        <label><input type="radio" name="color"> მწვანე</label>
+
+        <br><br>
+
+        <label>ქალაქი:</label>
+        <select>
+            <option>თბილისი</option>
+            <option>ბათუმი</option>
+            <option>ქუთაისი</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="გაგზავნა">
+
+    </form>
+
+    <hr>
+
+    <!-- 6 დავალება -->
+    <h2>Survey</h2>
+    <form>
+
+        <p>რომელი პროგრამირების ენა მოგწონთ?</p>
+
+        <label><input type="radio" name="lang"> Python</label><br>
+        <label><input type="radio" name="lang"> JavaScript</label><br>
+        <label><input type="radio" name="lang"> C++</label><br>
+        <label><input type="radio" name="lang"> Java</label>
+
+        <br><br>
+        <input type="submit" value="გაგზავნა">
+
+    </form>
+
+    <hr>
+
+    <!-- 7 დავალება -->
+    <h2>14 აპრილი - ქართული ენის დღე</h2>
+
+    <p>
+        14 აპრილი საქართველოში აღინიშნება როგორც ქართული ენის დღე.
+        ეს დღე უკავშირდება 1978 წელს, როდესაც ხალხმა დაიცვა ქართული ენის სტატუსი.
+    </p>
+
+    <form>
+
+        <p>გიყვარს ქართული ენა?</p>
+
+        <label><input type="radio" name="q1"> კი</label>
+        <label><input type="radio" name="q1"> არა</label>
+
+        <br><br>
+
+        <label>შენი ქალაქი:</label>
+        <select>
+            <option>თბილისი</option>
+            <option>რუსთავი</option>
+            <option>ბათუმი</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="გაგზავნა">
+
+    </form>
+
+</body>
+</html>
