@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>დავალება</title>
+
+<style>
+/* 1) Selector-ების მაგალითები */
+
+/* Tag Selector */
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+/* Class Selector */
+.box {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Class Selector */
+.text {
+    color: green;
+}
+
+/* ID Selector */
+#title {
+    color: red;
+    text-align: center;
+}
+
+/* 6) ღილაკების ID Selector */
+#button1 {
+    background-color: orange;
+    color: white;
+}
+
+#button2 {
+    background-color: purple;
+    color: white;
+}
+
+/* 7) სპეციფიკურობის მაგალითი */
+.paragraph {
+    color: green;
+}
+
+#demo {
+    color: red;
+}
+
+/* 8) Class Selector ღილაკებისთვის */
+.btn {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+}
+
+/* 9) სპეციფიკურობის მაგალითი */
+h1 {
+    color: blue;
+}
+
+.heading {
+    color: green;
+}
+
+#main-title {
+    color: red;
+}
+</style>
+
+</head>
+<body>
+
+<!-- 1) ახსნა -->
+<h2>CSS Selector-ები</h2>
+
+<p>
+<b>Tag Selector</b> ირჩევს HTML ელემენტს მისი თეგის სახელით.
+მაგალითი: p { color: blue; }
+</p>
+
+<p>
+<b>Class Selector</b> ირჩევს ელემენტებს class ატრიბუტის მიხედვით.
+მაგალითი: .box { background-color: lightgray; }
+</p>
+
+<p>
+<b>ID Selector</b> ირჩევს ერთ კონკრეტულ ელემენტს id ატრიბუტის მიხედვით.
+მაგალითი: #title { color: red; }
+</p>
+
+<hr>
+
+<!-- 2) 3 პარაგრაფი -->
+<h2>2. სამი პარაგრაფი</h2>
+
+<p>პარაგრაფი 1</p>
+<p>პარაგრაფი 2</p>
+<p>პარაგრაფი 3</p>
+
+<hr>
+
+<!-- 3) 2 div -->
+<h2>3. ორი Div</h2>
+
+<div class="box">
+    პირველი Div
+</div>
+
+<div class="box">
+    მეორე Div
+</div>
+
+<hr>
+
+<!-- 4) 3 პარაგრაფი -->
+<h2>4. Class Selector</h2>
+
+<p class="text">მწვანე პარაგრაფი 1</p>
+<p class="text">მწვანე პარაგრაფი 2</p>
+<p>ჩვეულებრივი პარაგრაფი</p>
+
+<hr>
+
+<!-- 5) h1 -->
+<h1 id="title">ეს არის Title</h1>
+
+<hr>
+
+<!-- 6) ღილაკები -->
+<h2>6. ID Selector ღილაკებზე</h2>
+
+<button id="button1">ღილაკი 1</button>
+<button id="button2">ღილაკი 2</button>
+
+<hr>
+
+<!-- 7) სპეციფიკურობა -->
+<h2>7. Specificity</h2>
+
+<p id="demo" class="paragraph">
+ეს პარაგრაფი იქნება წითელი, რადგან ID Selector ყველაზე ძლიერია.
+</p>
+
+<hr>
+
+<!-- 8) 3 ღილაკი -->
+<h2>8. Class Selector ღილაკებზე</h2>
+
+<button class="btn">ღილაკი 1</button>
+<button class="btn">ღილაკი 2</button>
+<button class="btn">ღილაკი 3</button>
+
+<hr>
+
+<!-- 9) h1 + class + id -->
+<h1 id="main-title" class="heading">
+ეს სათაური იქნება წითელი, რადგან ID Selector იმარჯვებს.
+</h1>
+
+<hr>
+
+<!-- 10) Div შიგთავსით -->
+<h2>10. Div კონტეინერი</h2>
+
+<div class="box">
+    <p class="text">პარაგრაფი 1</p>
+    <p class="text">პარაგრაფი 2</p>
+    <button class="btn">ღილაკი</button>
+</div>
+
+<hr>
+
+<!-- 11) ვებსაიტი თემაზე - ვარდები -->
+<h1>ვარდები</h1>
+
+<div class="box">
+    <p class="text">
+        ვარდი მსოფლიოში ერთ-ერთი ყველაზე პოპულარული ყვავილია.
+    </p>
+
+    <p class="text">
+        ვარდები გამოირჩევა ლამაზი ფერებითა და სასიამოვნო სურნელით.
+    </p>
+
+    <p>
+        ისინი ხშირად გამოიყენება ბაღების, პარკებისა და თაიგულების გასაფორმებლად.
+    </p>
+
+    <button class="btn">გაიგე მეტი</button>
+</div>
+
+</body>
+</html>
